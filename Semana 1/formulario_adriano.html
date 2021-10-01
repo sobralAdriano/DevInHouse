@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="vieport" content="width=device-width">
+    <title>Pagina da Web Vagas</title>
+    <!--criado por Adriano Sobral-->
+</head>
+
+<body>
+    <style>
+        img {
+            width: 200px;
+            height: 100px;
+            margin-left: 42%;
+            margin-right: 18%;
+          
+        }
+
+        .descricaoInicial {
+            text-align: center;
+        }
+
+        .curriculo {
+            margin-left: 40px;
+            margin-right: 40px;
+            background: lightgray;
+
+        }
+
+        fieldset {
+
+            width: 55%;
+            height: 200px;
+            background: rgb(245, 243, 243);
+            padding: 20px 20px 20px 20px;
+            margin: 0px 50px 20px 250px;
+
+        }
+        button{
+            width: 100px ; 
+            height: 30px ; 
+            margin-left: 920px; 
+            background:lightgray; 
+            margin-top: 2%;
+        }
+        legend{
+            text-align: center;
+        }
+    </style>
+    <section>
+        <img src="Web vagas.png">
+        <h2 class="descricaoInicial">Web Vagas</h2>
+        <p class="descricaoInicial">Seu portal de vagas na Web!</p>
+    </section>
+
+    <section>
+        <fieldset>
+            <legend >Dados Pessoais</legend>
+            <form>
+                <label for="nome">Nome</label><br>
+                <input type="text" id="nome"><br>
+                <label for="email">Email</label><br>
+                <input type="text" id="email"><br>
+                <label for="nome">Data de nascimento</label><br>
+                <input type="date" id="data_nascimento"><br>
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend >Experiência</legend>
+            <label for="empresa">Empresa</label><br>
+            <input type="text" id="empresa"><br>
+            <label for="cargo">Email</label><br>
+            <input type="text" id="cargo"><br>
+        </fieldset>
+        <fieldset>
+            <legend >Formação</legend>
+            <label for="instituicao">Instituição</label><br>
+            <input type="text" id="instituicao"><br>
+            <label for="area">Area</label><br>
+            <input type="text" id="area"><br>
+        </fieldset>
+        <!--<div class="card">
+            <h4>Descrição Pessoal:</h4>
+            <textarea
+              id="descricao-pessoal"
+              name="descricao-pessoal"
+              rows="7"
+              cols="50"
+              placeholder="Digite aqui"
+            >
+            </textarea>
+          </div>-->
+        <button type="button" onclick="alert('Enviado!!')">Enviar</button>
+    </section>
+
+</body>
+
+</html>

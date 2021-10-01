@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        button{
+            height: 30px;
+            width: 100px;
+            background: #0B5ED7;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            
+                
+            }
+            button:hover{
+                background: #629df7;
+            }
+
+        div{
+            border: groove black 1px ; 
+            margin: 20px 300px 0px 300px; 
+            text-align :center; 
+            display: block ; 
+            background: lightgray;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="form_split.html" method="POST" id="formulario">
+        <label for="nome">Digite o codigo do produto</label><br>
+        <input type="text" name ="codigo" placeholder="Código do Produto"><br><br>
+        <button type="submit" >Enviar</button>
+    </form>
+    <div>
+        <h1 id="modelo"></h1><br>
+
+        <h1 id="lote"></h1><br>
+        
+        <h1 id="cor"></h1><br>
+        
+        <h1 id="voltagem"></h1><br>
+    </div>
+    <script src="form_split.js" type="text/javascript">
+        var _hidediv = null;
+        function showdiv(id) {
+        if(_hidediv)
+        _hidediv();
+        var div = document.getElementById(id);
+        div.style.display = "block";
+        _hidediv = function () { div.style.display = "none"; };
+        }
+    </script>
+</body>

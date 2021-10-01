@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+       }
+        body{
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+        }
+
+        .img-remove{
+            width:20px;
+            height: 20px;
+            border: solid 1px black;
+            border-radius: 3px;
+            box-shadow: 3px cadetblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <input type="checkbox" id ="realized" onclick="taskChecked()"/>
+        <p class="task" >Tarefa realizada</p>
+        <button onclick="this.parentNode.remove()">
+            <img class = "img-remove" src="cancel.png">
+        </button>
+    </div>
+    <script>
+        function taskChecked(){
+            if (document.getElementById('realized').checked){
+                const task = document.querySelector('.task');
+                task.style ='text-decoration-line: line-through';
+            }
+        }
+
+        
+
+    </script>
+</body>
+</html>

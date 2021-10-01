@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <form action="form.html" method="POST" id="formulario">
+        
+        <p>Nome</p>
+            <input type="text" id="nome"><br><br>
+                
+        <p style="margin-left: 20px;">Modelo</p>
+      
+        <input type="radio" id="tamanho" name="modelo_pp" value="17'">
+        <label for="pp">17'</label><br>
+        <input type="radio" id="tamanho" name="modelo_peq" value="27'">
+        <label for="peq">27'</label><br>
+        <input type="radio" id="tamanho" name="modelo_med" value="32'">
+        <label for="med">32'</label><br>
+        <input type="radio" id="tamanho" name="modelo_grd" value="55'">
+        <label for="grd">55'</label><br>
+        <input type="radio" id="tamanho" name="modelo_gg" value="65'">
+        <label for="gg">65'</label><br><br>
+    
+        <p for="marcas">Marca</p>
+    
+        <select id="marcas" name="marcas" style="display: block;margin-bottom: 20px;"><br>
+        <option >Joca Corp</option>
+        <option >Jana Ind</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h3 id="resposta_nome"></h3>
+    <h3 id="resposta_marca"></h3>
+    <button onclick="window.print()">Imprimir</button>
+    <script src="form.js"></script>
+</body>
+</html>
+
